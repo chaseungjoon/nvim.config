@@ -41,7 +41,7 @@ return {
 
         -- Footers
         local function get_current_time()
-            return os.date("%Y/%m/%d %H:%M")
+            return os.date("%Y-%m-%d %H:%M")
         end
 
         local function get_user_host()
@@ -52,7 +52,7 @@ return {
             local cpu    = vim.fn.system("sysctl -n machdep.cpu.brand_string"):gsub("%s+$", "")
             local osver = vim.fn.system("sw_vers -productVersion"):gsub("%s+$", "")
 
-            return string.format("       %s  %s  macOS %s", cpu, arch, osver)
+            return string.format("      %s | %s | macOS %s", cpu, arch, osver)
         end
 
         local flines = {"", "","", "", "","", get_user_host(), get_system_info(),"" , "              " .. get_current_time() }
