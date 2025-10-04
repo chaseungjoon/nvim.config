@@ -48,7 +48,7 @@ return {
             return string.format("       %s  %s  macOS %s", cpu, arch, osver)
         end
 
-        local flines = {"", "", "","", get_user_host(), get_system_info(),"" , "              " .. get_current_time() }
+        local flines = {"", "", "", "","", get_user_host(), get_system_info(),"" , "              " .. get_current_time() }
         dashboard.section.footer.val = flines
         dashboard.section.footer.opts.hl = "Comment"
 
