@@ -1,0 +1,19 @@
+{
+  "suggest.floatEnable": false,
+  "suggest.enablePreview": false,
+  "suggest.preferCompleteThanJumpPlaceholder": false,
+  "suggest.maxCompleteItemCount": 30,
+  "signature.enable": false,
+  "signature.target": "echo",
+  "diagnostic.messageTarget": "echo",
+  "hover.target": "echo",
+
+    "pyright":{
+        "python": {
+            "analysis": {
+                "typeHints": false
+            }
+        }
+    },
+    "clandg.inlayHints.enable": false
+}
