@@ -1,6 +1,9 @@
 # Configuration for Neovim
 
 ## Minimal, fast and transparent aesthetic setup
+<img width="2940" height="1648" alt="image" src="https://github.com/user-attachments/assets/fa80f757-4037-4a2e-9243-d6bac9484bc4" />
+<img width="2940" height="1652" alt="image" src="https://github.com/user-attachments/assets/7c2d9266-0a63-4bee-94a2-79dcdaadd6dc" />
+
 
 - LSP : pyright, clangd, lua_ls
 - Plugins (LazyVim)
