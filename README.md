@@ -5,7 +5,7 @@
 <img width="2940" height="1652" alt="image" src="https://github.com/user-attachments/assets/7c2d9266-0a63-4bee-94a2-79dcdaadd6dc" />
 
 
-- LSP : pyright, clangd, lua_ls
+- LSP : pyright, clangd, coc-lua, coc-rust-analyzer
 - Plugins (LazyVim)
     - [alpha-nvim](https://github.com/goolord/alpha-nvim)
     - [auto-pairs](https://github.com/jiangmiao/auto-pairs)
