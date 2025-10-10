@@ -16,7 +16,7 @@ return {
             vim.g.coc_hover_target = 'float'
             vim.g.coc_signature_float_enable = false
             vim.api.nvim_create_autocmd("BufWritePre", {
-                pattern = { "*.py", "*.c", "*.h", "*.lua", "*.rust" },
+                pattern = { "*.py", "*.c", "*.h", "*.lua", "*.rs" },
                 callback = function()
                     local ft = vim.bo.filetype
                     if ft == "python" then
