@@ -29,5 +29,17 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- Popup/completion menu settings
 vim.opt.pumblend = 0
 vim.opt.winblend = 0
-vim.opt.pumheight = 20                        
-vim.opt.completeopt = "menu,menuone,noselect" 
+vim.opt.pumheight = 20
+vim.opt.completeopt = "menu,menuone,noselect"
+
+-- swp file configs
+vim.opt.swapfile = false
+vim.opt.writebackup = false
+vim.opt.backup = false
+
+-- Delete without yanking
+vim.keymap.set({ "n", "v" }, "d", '"_d')
+vim.keymap.set({ "n", "v" }, "D", '"_D')
+vim.keymap.set("n", "dd", '"_dd')
+vim.keymap.set("n", "dG", '"_dG')
+
