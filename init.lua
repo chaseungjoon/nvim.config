@@ -11,8 +11,8 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
+vim.env.PATH = "/Library/TeX/texbin:" .. vim.env.PATH
 
 require("vim-options")
 require("lazy").setup("plugins")
 require("terminal")
-
