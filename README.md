@@ -10,6 +10,7 @@
     - [alpha-nvim](https://github.com/goolord/alpha-nvim)
     - [auto-pairs](https://github.com/jiangmiao/auto-pairs)
     - [coc.nvim](https://github.com/neoclide/coc.nvim)
+    - [copilot.vim](https://github.com/github/copilot.vim)
     - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
     - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
     - [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)
@@ -18,4 +19,5 @@
     - [transparent.nvim](https://github.com/xiyaowong/transparent.nvim)
     - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
     - [vim-surround](https://github.com/tpope/vim-surround)
+    - [vimtex](https://github.com/lervag/vimtex)
 
