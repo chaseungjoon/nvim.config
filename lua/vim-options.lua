@@ -27,11 +27,17 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>a", ":CopilotChatOpen<CR><Esc>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader><Esc>", ":CopilotChatStop<CR><Esc>", { noremap = true, silent = true })
 vim.keymap.set("v", "<leader>a", ":CopilotChatOpen<CR><Esc>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader><Esc>", ":CopilotChatStop<CR><Esc>", { noremap = true, silent = true })
 vim.keymap.set("v", "<leader><Esc>", ":CopilotChatStop<CR><Esc>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>r", ":CopilotChatReset<CR><Esc>", { noremap = true, silent = true })
 vim.keymap.set("v", "<leader>r", ":CopilotChatReset<CR><Esc>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>z", ":CopilotChatSave", { noremap = true })
+vim.keymap.set("v", "<leader>z", ":CopilotChatSave", { noremap = true })
+vim.keymap.set("n", "<leader>x", ":CopilotChatLoad", { noremap = true })
+vim.keymap.set("v", "<leader>x", ":CopilotChatLoad", { noremap = true })
+
+
 
 
 -- Popup/completion menu settings
