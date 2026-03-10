@@ -15,5 +15,8 @@
             }
         }
     },
-    "clandg.inlayHints.enable": false
+    "clandg.inlayHints.enable": false,
+    "clangd.arguments": [
+        "--compile-commands-dir=build"
+    ]
 }
