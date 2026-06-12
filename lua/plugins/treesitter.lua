@@ -1,14 +1,13 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    branch = 'master',
+    branch = "main",
     lazy = false,
     build = ":TSUpdate",
+    init = function()
+        require("nvim-treesitter.install").prefer_git = true
+    end,
     config = function()
-        local config = require("nvim-treesitter.configs")
-        config.setup({
-            ensure_installed = { "python", "c", "cpp", "lua" },
-            highlight = { enable = true },
-            indent = { enable = true },
-        })
+        local ts = require("nvim-treesitter")
+        ts.install({ "python", "c", "cpp", "lua", "markdown", "markdown_inline" })
     end
 }
