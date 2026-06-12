@@ -8,6 +8,6 @@ return {
     end,
     config = function()
         local ts = require("nvim-treesitter")
-        ts.install({ "python", "c", "cpp", "lua", "markdown", "markdown_inline" })
+        ts.install({ "python", "c", "cpp", "lua", "gitignore", "markdown", "markdown_inline" })
     end
 }
