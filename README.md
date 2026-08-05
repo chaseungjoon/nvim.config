@@ -9,14 +9,17 @@
 ### Prerequisites
 > Neovim >= 0.10, [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter-cli), [ripgrep](https://github.com/burntsushi/ripgrep), [fd](https://github.com/sharkdp/fd), [lua-language-server](https://github.com/LuaLS/lua-language-server), Any Nerd Font
 
+### Clone into config
+
 ```bash
-git clone https://github.com/chaseungjoon/nvim.config.git ~/.config/neovim
+git clone https://github.com/chaseungjoon/nvim.config.git ~/.config/nvim
 ```
 
----
+
+## Plugins
 
 - LSP : pyright, clangd, coc-lua, coc-rust-analyzer
-- Plugins (LazyVim)
+- Plugins ([lazy.nvim](https://github.com/folke/lazy.nvim))
     - [alpha-nvim](https://github.com/goolord/alpha-nvim)
     - [auto-pairs](https://github.com/jiangmiao/auto-pairs)
     - [coc.nvim](https://github.com/neoclide/coc.nvim)
