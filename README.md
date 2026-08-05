@@ -4,6 +4,16 @@
 <img width="2940" height="1648" alt="image" src="https://github.com/user-attachments/assets/fa80f757-4037-4a2e-9243-d6bac9484bc4" />
 <img width="2940" height="1652" alt="image" src="https://github.com/user-attachments/assets/7c2d9266-0a63-4bee-94a2-79dcdaadd6dc" />
 
+## Install
+
+### Prerequisites
+> Neovim >= 0.10, [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter-cli), [ripgrep](https://github.com/burntsushi/ripgrep), [fd](https://github.com/sharkdp/fd), [lua-language-server](https://github.com/LuaLS/lua-language-server), Any Nerd Font
+
+```bash
+git clone https://github.com/chaseungjoon/nvim.config.git ~/.config/neovim
+```
+
+---
 
 - LSP : pyright, clangd, coc-lua, coc-rust-analyzer
 - Plugins (LazyVim)
