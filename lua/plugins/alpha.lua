@@ -47,12 +47,35 @@ return {
         local function get_user_host()
             return os.getenv("USER") .. "@" .. vim.fn.hostname()
         end
-        local function get_system_info()
-            local arch   = vim.fn.system("uname -m"):gsub("%s+$", "")
-            local cpu    = vim.fn.system("sysctl -n machdep.cpu.brand_string"):gsub("%s+$", "")
-            local osver = vim.fn.system("sw_vers -productVersion"):gsub("%s+$", "")
+        local function read_first(path, pattern)
+            local fh = io.open(path, "r")
+            if not fh then
+                return nil
+            end
+            for line in fh:lines() do
+                local m = line:match(pattern)
+                if m then
+                    fh:close()
+                    return m
+                end
+            end
+            fh:close()
+            return nil
+        end
 
-            return string.format("      %s | %s | macOS %s", cpu, arch, osver)
+        local function get_system_info()
+            local uname = vim.uv.os_uname()
+            local arch = uname.machine
+
+            if uname.sysname == "Darwin" then
+                local cpu = vim.fn.system("sysctl -n machdep.cpu.brand_string"):gsub("%s+$", "")
+                local osver = vim.fn.system("sw_vers -productVersion"):gsub("%s+$", "")
+                return string.format("      %s | %s | macOS %s", cpu, arch, osver)
+            end
+
+            local cpu = read_first("/proc/cpuinfo", "^model name%s*:%s*(.+)$") or uname.sysname
+            local osname = read_first("/etc/os-release", '^PRETTY_NAME="?([^"]+)"?$') or uname.sysname
+            return string.format("      %s | %s | %s", cpu, arch, osname)
         end
 
         local flines = {"", "","", "", "","", get_user_host(), get_system_info(),"" , "              " .. get_current_time() }

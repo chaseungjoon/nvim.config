@@ -24,7 +24,6 @@ git clone https://github.com/chaseungjoon/nvim.config.git ~/.config/nvim
     - [auto-pairs](https://github.com/jiangmiao/auto-pairs)
     - [coc.nvim](https://github.com/neoclide/coc.nvim)
     - [copilot.vim](https://github.com/github/copilot.vim)
-    - [copilotchat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim)
     - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
     - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
     - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
